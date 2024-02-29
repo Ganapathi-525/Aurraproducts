@@ -1,0 +1,52 @@
+#carouselExampleAutoplaying{
+
+    width: 700px;
+    height: 350px;
+}
+
+#maindiv{
+
+    display: flex;
+    gap: 10px;
+
+    margin: 40px;
+}
+
+#maindiv img{
+
+    /* width: 200px; */
+
+    height: 450px;
+}
+
+#maindiv>div{
+
+    /* border:2px solid red; */
+background-color: rgb(120, 201, 193);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#homebtn{
+
+    margin-right: 200px;
+    padding: 20px;
+
+    margin-left: 20px;
+
+    border-radius: 20px;
+
+    background-color: aqua;
+}
+
+#addtocartbtn{
+
+    margin-right: 200px;
+    padding: 20px;
+
+    margin-left: 20px;
+
+    border-radius: 20px;
+    background-color: darkgoldenrod;
+}
+
