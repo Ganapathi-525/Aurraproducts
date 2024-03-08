@@ -18,14 +18,14 @@ let img1=document.getElementById("img1");
 
     img1.setAttribute("src",data["images"][0])
     console.log(data["images"][0])
-  let img2=document.getElementById("img2");
-  img2.setAttribute("src",data["images"][1])
+  // let img2=document.getElementById("img2");
+  // img2.setAttribute("src",data["images"][1])
   
-  let img3=document.getElementById("img3");
-  img3.setAttribute("src",data["images"][2])
+  // let img3=document.getElementById("img3");
+  // img3.setAttribute("src",data["images"][2])
   
-  let img4=document.getElementById("img4");
-  img4.setAttribute("src",data["images"][3])
+  // let img4=document.getElementById("img4");
+  // img4.setAttribute("src",data["images"][3])
 
 
 

@@ -4,6 +4,13 @@
     height: 350px;
 }
 
+#header{
+
+    margin: auto;
+    margin-left: 250px;
+    padding: 10px;
+  }
+
 #maindiv{
 
     display: flex;
