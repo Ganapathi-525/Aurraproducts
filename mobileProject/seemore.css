@@ -22,17 +22,25 @@
 #maindiv img{
 
     /* width: 200px; */
-
+      width:100%;
+      border-radius: 20%;
     height: 450px;
 }
 
 #maindiv>div{
 
     /* border:2px solid red; */
-background-color: rgb(120, 201, 193);
+/* background-color: rgb(120, 201, 193); */
     border-radius: 20px;
     padding: 10px;
 }
+
+#header{
+
+    margin: auto;
+    margin-left: 350px;
+    padding: 10px;
+  }
 
 #homebtn{
 
