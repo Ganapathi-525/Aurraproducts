@@ -3,22 +3,16 @@
     grid-template-columns: repeat(3,1fr);
     line-height: 1;
     gap: 10px;
- 
-
     line-height: 1px;
-    
-
-
 }
-
 #header{
-
   margin: auto;
-  margin-left: 350px;
+  /* margin-left: 350px; */
   padding: 10px;
+  justify-content: center;
+  
   color: #ccc;
 }
-
 .buttondivs{
   display: flex;
   justify-content: space-between;
@@ -26,75 +20,26 @@
 #navbar{
   width: 1200px;
   margin: auto;
-
   display: flex;
   justify-content:space-between;
   padding: 10px;
-
 }
 #navbar>button{
-
   width: 140px;
  margin-right: 10px;
  padding: 10px;
 }
-
-#AddToCart{
-  /* width: 140px;
-  padding: 10px;
-  position: relative;
-  left: 1220px;
- bottom: 20px; */
-}
-
-
 .card-img{
-
-
     height: 170px;
     width: 100%;
 }
-
-
 img{
     width:600px;
 }
-
-#maindiv>div>img{
-
-   
-}
-
 .card-title{
     height: 100px;
     line-height:normal;
 }
-
-#maindiv>div+button{
-
- 
-}
-
-#maindiv>div>button{
-   
-}
-
-
-#navbar{
-
-   
-
-    
-}
-
-#navbar>button{
-
-}
-
-
-
-
-
 .card {
     --font-color: #323232;
     --font-color-sub: #666;
@@ -255,12 +200,6 @@ img{
     transform: translateY(3px);
   }
   
-
-
-
-
-
-
   .uiverse {
     --duration: 5s;
     --easing: ease-in-out;
@@ -675,17 +614,20 @@ body {
 }
 
 h1 {
-  /* text-align: center; */
+  text-align: center;
+  justify-content: center;
 }
 
 #navbar {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  /* margin: 20px 0; */
+  /* align-items: center; */
 }
 
 #navbar button {
   margin: 0 10px;
+  border-radius: 50px;
 }
 
 #maindiv {
@@ -733,24 +675,137 @@ h1 {
   justify-content: space-between;
 }
 
-/* Media queries for tablet responsiveness */
-@media only screen and (max-width: 742px) {
-  #maindiv {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  #navbar{
-display:grid;
-/* flex-wrap: wrap; */
-grid-template-columns: repeat(4, 1fr);
-  }
-
+#AddToCart{
+  color:black;
+  background-color: #ffd800;
 }
 
 /* Media queries for mobile responsiveness */
-@media only screen and (max-width: 476px) {
+
+
+
+/* For mobile phones */
+@media only screen and (max-width: 600px) {
+  /* CSS rules for mobile phones */
+  body{
+    /* display: flex; */
+    /* justify-content: center; */
+  }
+  h1{
+    display: flex;
+    width: 1px;
+    /* text-wrap: nowrap; */
+    justify-content: center;
+    /* flex-wrap: nowrap; */
+  }
+
   #maindiv {
-    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    grid-template-columns: repeat(1,300px);
+    gap: 10px;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 10px;
+    /* margin-left: 200px; */
+  }
+
+  #navbar {
+    display:grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 4fr);
+   width: fit-content;
+    gap: 10px;
+   
+    /* flex-wrap:wrap; */
+    /* margin: 20px 0; */
+    /* align-items: center; */
+  }
+
+}
+
+/* For tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* CSS rules for tablets */
+  body{
+    /* width: 601px; */
+    /* overflow-x: hidden; */
+    justify-content: center;
+    /* margin-left: 400px; */
+  }
+  #header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: #ffd215; */
+    margin-left: 350px;
+    font-weight: 1000;
+    /* color: #666; */
+   
+  }
+  #maindiv {
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+    /* width:601px; */
+    padding: 10px;
+
+  }
+  #navbar {
+    display:grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 4fr);
+    margin-left: 200px;
+    gap: 10px;
+    /* flex-wrap:wrap; */
+    /* margin: 20px 0; */
+    /* align-items: center; */
   }
 }
+
+/* For laptops and desktops */
+@media only screen and (min-width: 1025px) {
+  /* CSS rules for laptops and desktops */
+  h1{
+    display: flex;
+    justify-self: center;
+  }
+  #maindiv {
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    /* gap: 10px; */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  body{
+    overflow: var(x);
+  }
+}
+
+
+
+
+/* 
+@media only screen and (max-width:767px){
+ #header{
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  padding:10px
+ }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px)  {
+  body {
+    
+
+
+
+
+  }
+} */
 
